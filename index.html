@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="is-loading">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Richie Rich | Luxury Pan, Coffee &amp; Essentials, 24x7 in Ahmedabad</title>
+  <meta name="description"
+    content="Luxury tobacco-free pan, coffee and late-night essentials at Sindhubhavan, Bopal, Gota and SG Highway. Open 24 hours.">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===========================x=================================
+       PREMIUM PRELOADER
+       ============================================================ -->
+  <div id="preloader" class="preloader" role="status" aria-live="polite" aria-label="Loading Richie Rich experience">
+    <div class="preloader-ambient"></div>
+    <div class="preloader-shimmer"></div>
+    <div class="preloader-content">
+      <div class="preloader-emblem-wrap">
+        <!-- Circular Loading Border SVG -->
+        <svg class="preloader-circle-loader" viewBox="0 0 220 220" aria-hidden="true">
+          <defs>
+            <linearGradient id="goldRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+              <stop offset="50%" stop-color="#C9A66B" />
+              <stop offset="100%" stop-color="#E5D2A6" />
+            </linearGradient>
+            <filter id="goldRingGlow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- Static background track circle -->
+          <circle class="circle-track" cx="110" cy="110" r="82" fill="none" stroke="rgba(201, 166, 107, 0.2)"
+            stroke-width="2.5" />
+
+          <!-- Outer rotating dashed celestial ring -->
+          <circle class="circle-spin" cx="110" cy="110" r="94" fill="none" stroke="rgba(201, 166, 107, 0.4)"
+            stroke-width="1.5" stroke-dasharray="14 180" stroke-linecap="round" />
+
+          <!-- Dynamic Active Loading Border (Draws/fills circle clockwise as loading progresses) -->
+          <circle id="preloaderCircleBar" class="circle-progress" cx="110" cy="110" r="82" fill="none"
+            stroke="url(#goldRingGrad)" stroke-width="3.5" stroke-dasharray="515.22" stroke-dashoffset="515.22"
+            stroke-linecap="round" filter="url(#goldRingGlow)" />
+
+          <!-- Cardinal 12, 3, 6, 9 horological diamond pips -->
+          <polygon points="110,10 113,15 110,20 107,15" fill="#E5D2A6" />
+          <polygon points="210,110 205,113 200,110 205,107" fill="#E5D2A6" />
+          <polygon points="110,210 113,205 110,200 107,205" fill="#E5D2A6" />
+          <polygon points="10,110 15,113 20,110 15,107" fill="#E5D2A6" />
+        </svg>
+
+        <!-- Central Symbol / Logo -->
+        <div class="preloader-logo-frame">
+          <div class="preloader-glow"></div>
+          <img src="assets/logo.png" alt="Richie Rich Emblem" class="preloader-logo" width="76" height="76">
+        </div>
+      </div>
+
+      <!-- Brand Typography: Letters rise from bottom to original position with separation -->
+      <div class="preloader-brand">
+        <h1 class="preloader-title" aria-label="Richie Rich">
+          <span class="word-wrap" aria-hidden="true">
+            <span class="char-box"><span class="char" style="--char-i: 0">R</span></span>
+            <span class="char-box"><span class="char" style="--char-i: 1">I</span></span>
+            <span class="char-box"><span class="char" style="--char-i: 2">C</span></span>
+            <span class="char-box"><span class="char" style="--char-i: 3">H</span></span>
+            <span class="char-box"><span class="char" style="--char-i: 4">I</span></span>
+            <span class="char-box"><span class="char" style="--char-i: 5">E</span></span>
+          </span>
+          <span class="char-gap">&nbsp;</span>
+          <span class="word-wrap" aria-hidden="true">
+            <span class="char-box"><span class="char" style="--char-i: 6">R</span></span>
+            <span class="char-box"><span class="char" style="--char-i: 7">I</span></span>
+            <span class="char-box"><span class="char" style="--char-i: 8">C</span></span>
+            <span class="char-box"><span class="char" style="--char-i: 9">H</span></span>
+          </span>
+        </h1>
+        <span class="preloader-tagline">
+          <span>Ahmedabad</span>
+          <span class="dot"></span>
+          <span>24x7</span>
+          <span class="dot"></span>
+          <span>Luxury Pan &amp; Cafe</span>
+        </span>
+      </div>
+
+      <div class="preloader-meter">
+        <div class="preloader-track">
+          <div class="preloader-bar" id="preloaderBar"></div>
+        </div>
+        <div class="preloader-meta">
+          <span class="preloader-status" id="preloaderStatus">Preparing experience</span>
+          <span class="preloader-counter" id="preloaderCounter">00%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION
+       ============================================================ -->
+  <header id="hd">
+    <div class="wrap">
+      <a class="mark" href="#top">
+        <img src="assets/logo.png" alt="Richie Rich Logo" class="mark-logo" width="36" height="36">
+        <span>Richie Rich</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#menu">What we serve</a>
+        <a href="#find">Find us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Responsive Mobile Toggle -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu" aria-expanded="false"
+        aria-controls="mobileDrawer">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Backdrop Overlay -->
+  <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+
+  <!-- Mobile Navigation Drawer (Arrives from Left to Right) -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="drawer-header">
+      <a class="drawer-brand drawer-animate" href="#top">
+        <img src="assets/logo.png" alt="" class="drawer-logo" width="34" height="34">
+        <span>Richie Rich</span>
+      </a>
+      <button class="drawer-close" id="drawerClose" aria-label="Close Navigation Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="drawer-badge drawer-animate">
+        <i></i>
+        <span>AHMEDABAD &bull; 24X7 OPEN NOW</span>
+      </div>
+
+      <nav class="drawer-nav" aria-label="Mobile Drawer Navigation">
+        <a href="#menu" class="drawer-link drawer-animate">
+          <span class="nav-idx">01</span>
+          <span class="nav-text">What we serve</span>
+        </a>
+        <a href="#find" class="drawer-link drawer-animate">
+          <span class="nav-idx">02</span>
+          <span class="nav-text">Find us</span>
+        </a>
+        <a href="#contact" class="drawer-link drawer-animate">
+          <span class="nav-idx">03</span>
+          <span class="nav-text">Contact</span>
+        </a>
+      </nav>
+
+      <div class="drawer-footer drawer-animate">
+        <div class="drawer-direct">
+          <a class="btn fill" href="#find">Find Nearest Store</a>
+        </div>
+        <p class="drawer-hours">Open every hour, every day.</p>
+        <div class="drawer-social">
+          <a href="https://instagram.com/richierich24x7" target="_blank" rel="noopener">Instagram</a>
+          <span class="sep">&bull;</span>
+          <a href="mailto:hello@richierich24x7.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="top">
+    <!-- Hero Section -->
+    <div class="hero" id="hero">
+      <div class="wrap">
+        <div class="hero-content">
+          <!-- Tag with masked bottom-to-original reveal -->
+          <div class="hero-tag-wrap">
+            <span class="hero-tag">24x7 Luxury Pan, Coffee &amp; Cafe</span>
+          </div>
+
+          <!-- Headline with line & word rise from bottom to original position with separation & delay -->
+          <h1 class="hero-title" aria-label="Always open. Always Richie.">
+            <span class="hero-line">
+              <span class="hero-word-box"><span class="hero-word" style="--h-i: 0">Always</span></span>
+              <span class="hero-word-box"><span class="hero-word" style="--h-i: 1">open.</span></span>
+            </span>
+            <span class="hero-line">
+              <span class="hero-word-box"><span class="hero-word" style="--h-i: 2">Always</span></span>
+              <span class="hero-word-box"><span class="hero-word hero-em"
+                  style="--h-i: 3"><em>Richie.</em></span></span>
+            </span>
+          </h1>
+
+          <!-- Description paragraph with bottom-to-original-position reveal -->
+          <div class="hero-desc-wrap">
+            <p class="hero-desc">Luxury pan, fresh artisanal coffee and late-night essentials across Ahmedabad. Every
+              hour of the day, every day of the week.</p>
+          </div>
+
+          <!-- CTA Buttons with delayed bottom-to-original-position reveal -->
+          <div class="btns hero-btns">
+            <a class="btn fill" href="#find">Find nearest store</a>
+            <a class="btn line" href="https://instagram.com/richierich24x7" target="_blank" rel="noopener">Follow on
+              Instagram</a>
+          </div>
+        </div>
+
+        <div class="dial" role="img"
+          aria-label="A 24-hour dial showing current time in Ahmedabad. The stores are open at every hour.">
+          <svg viewBox="0 0 500 500">
+            <defs>
+              <path id="circ" d="M250,250 m-208,0 a208,208 0 1,1 416,0 a208,208 0 1,1 -416,0" />
+            </defs>
+            <g class="ring">
+              <text fill="#E5D2A6" font-size="20" font-family="'Cinzel', serif" letter-spacing="4">
+                <textPath href="#circ">Pan • Coffee • Essentials • Open all night • Open all day • Pan • Coffee •
+                  Essentials • Open all night • Open all day •</textPath>
+              </text>
+            </g>
+            <circle cx="250" cy="250" r="172" fill="none" stroke="#C9A66B" stroke-opacity=".5" />
+            <circle cx="250" cy="250" r="120" fill="none" stroke="#C9A66B" stroke-opacity=".18" />
+            <g id="ticks" stroke="#C9A66B"></g>
+            <g class="hand" id="hand">
+              <line x1="250" y1="250" x2="250" y2="96" stroke="#C9A66B" stroke-width="2" />
+              <circle cx="250" cy="92" r="9" fill="#C9A66B" />
+              <circle cx="250" cy="92" r="16" fill="none" stroke="#E5D2A6" stroke-opacity=".5" />
+            </g>
+            <circle cx="250" cy="250" r="5" fill="#E5D2A6" />
+            <text class="live" id="time" x="250" y="335" text-anchor="middle">--:--</text>
+            <text class="sub" x="250" y="360" text-anchor="middle">AHMEDABAD, OPEN NOW</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Continuous Marquee Ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div id="tk"></div>
+    </div>
+
+    <!-- Offerings Section -->
+    <section id="menu">
+      <div class="wrap">
+        <h2>What we <em>serve</em></h2>
+        <div class="offer-list">
+          <div class="row">
+            <div class="row-header">
+              <span class="row-num">01</span>
+              <h3>Pan</h3>
+            </div>
+            <p>Hand-rolled, 100% tobacco-free luxury pan made fresh at the counter, from timeless meetha classics to
+              opulent gold leaf blends.</p>
+          </div>
+          <div class="row">
+            <div class="row-header">
+              <span class="row-num">02</span>
+              <h3>Coffee</h3>
+            </div>
+            <p>Hot brews and refreshing cold coffee made to order, for the early dawn start or the late-night drive home
+              across Ahmedabad.</p>
+          </div>
+          <div class="row">
+            <div class="row-header">
+              <span class="row-num">03</span>
+              <h3>Essentials</h3>
+            </div>
+            <p>Everything you realize you need at 3 a.m. Gourmet snacks, cold beverages, refreshments and daily basics,
+              waiting right on the shelf.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locs" id="find">
+      <div class="wrap">
+        <h2>Four stores. <em>None of them close.</em></h2>
+        <div class="pick">
+          <div class="tabs" role="tablist" aria-label="Store locations" id="tabs"></div>
+          <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="wrap contact">
+        <div>
+          <h2>Say <em>hello</em></h2>
+          <p class="lead">Questions, feedback or a franchise idea? Write directly to our team at<br>
+            <a href="mailto:hello@richierich24x7.com">hello@richierich24x7.com</a>
+          </p>
+        </div>
+        <form id="form" novalidate>
+          <label>Full name
+            <input name="name" autocomplete="name" placeholder="Your name" required>
+          </label>
+          <label>Email address
+            <input name="email" type="email" autocomplete="email" placeholder="name@domain.com" required>
+          </label>
+          <label>Message
+            <textarea name="msg" placeholder="How can we assist you?" required></textarea>
+          </label>
+          <button class="btn fill" type="submit">Send message</button>
+          <p id="ok" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="wrap">
+      <span class="mark">
+        <img src="assets/logo.png" alt="" class="mark-logo" width="34" height="34">
+        <span>Richie Rich</span>
+      </span>
+      <span>Ahmedabad, Gujarat • Open 24x7</span>
+      <span>
+        <a href="https://instagram.com/richierich24x7" target="_blank" rel="noopener">Instagram</a> &nbsp;•&nbsp;
+        <a href="mailto:hello@richierich24x7.com">Email</a>
+      </span>
+      <span>&copy; 2026 Richie Rich. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- External Script -->
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
